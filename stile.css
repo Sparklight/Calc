@@ -37,14 +37,16 @@ button:hover {
     margin-top: 30px;
 }
 .outputWindow {
+    background: rgb(170, 170, 170);
     border-radius: 10px;
     display: flex;
     justify-content: left;
-    border: 2px solid blue;
+    border: 2px solid rgb(146, 106, 45);
     margin-left: 0px;
     margin-top: 10px;
     width: 154px;  
     height: 40px;
+    
 }
 .miniBody {
     border: 2px solid rgb(0, 255, 21);
@@ -59,7 +61,7 @@ button:hover {
     background: rgb(190, 190, 190);
 }
 
-.btnorange button {
+.btnorange {
     background: rgb(219, 104, 38);
 }
 
