@@ -37,6 +37,7 @@ button:hover {
     margin-top: 30px;
 }
 .outputWindow {
+    border-radius: 10px;
     display: flex;
     justify-content: left;
     border: 2px solid blue;
@@ -69,7 +70,7 @@ button:hover {
 .btndispbox {
     position: absolute;
     bottom: 0;
-    left:7.1% ;
+    left:7.1%;
     padding: 4px rgb(146, 92, 11);
     /* background: red; */
     width: 90%;
@@ -77,9 +78,18 @@ button:hover {
 }
 
 .name {
+    padding: 4px red;
     position: absolute;
     top: 20px;
     /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
-    font-size: 10;
+    font-size: 130%;
     font-weight:100;
 }
+
+
+/* .btnblock {
+    background: red;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}  */
