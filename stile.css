@@ -128,6 +128,7 @@ button:hover {
         }
     .outputWindow {
         background: rgb(139, 139, 139);
+        border: 2px solid rgb(128, 52, 52);
     }
     .btngray button {
         background: rgb(66, 66, 66);
@@ -137,6 +138,9 @@ button:hover {
     } 
     body {
         background-color: rgb(68, 68, 68);
+    }
+    .btndispbox {
+        padding: 4px rgb(231, 0, 0);
     }
 }
 
