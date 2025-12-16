@@ -145,5 +145,16 @@ button:hover {
  .body {
     margin-top: 25vh;
   }
+} 
 
-}  
+ @media (max-width: 240px) {  
+body {
+    display: flex;
+    justify-content: center;
+}
+ .body {
+    min-width: none;
+    margin-top: 25vh;
+    scale:0.7;
+  }
+} 
