@@ -20,7 +20,9 @@ button:hover {
     border: 2px solid rgb(0, 0, 0);
     margin-left: auto;
     margin-right: auto; 
-    width:300px;  
+    width:auto;
+    max-width: 300px;
+    min-width: 230px;  
     height: 400px;
     border-radius: 20px;
     box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.349);
@@ -110,3 +112,10 @@ button:hover {
     width: 50px;
     height: 50px;
 }
+
+ @media (max-width: 500px) {/*and (min-height: 900){ */
+  .body {
+    margin-top: 35vh;
+
+  }
+} 
