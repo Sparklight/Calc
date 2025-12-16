@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap');
+
 body {
     background-color: rgb(230, 230, 230);
+    font-family: "BBH Bartle", sans-serif;
+    font-weight: normal;
+    font-style:normal;
 }
 
 button {
