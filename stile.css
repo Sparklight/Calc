@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(230, 230, 230);
+}
+
 button {
     border-radius: 10px;
     border:outset;
@@ -112,10 +116,27 @@ button:hover {
     width: 50px;
     height: 50px;
 }
+@media (prefers-color-scheme: dark) {
+    .body {
+        background: rgb(82, 82, 82);
+        }
+    .outputWindow {
+        background: rgb(139, 139, 139);
+    }
+    .btngray button {
+        background: rgb(66, 66, 66);
+    }
+    .name {
+        color: rgb(192, 192, 192);
+    } 
+    body {
+        background-color: rgb(68, 68, 68);
+    }
+}
 
- @media (max-width: 500px) {/*and (min-height: 900){ */
-  .body {
+ @media (max-width: 500px) {  
+ .body {
     margin-top: 35vh;
-
   }
-} 
+
+}  
