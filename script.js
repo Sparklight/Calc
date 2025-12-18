@@ -17,10 +17,18 @@
 
 // alert (butttonValye);
 
-const elemOne = document.getElementById('button');
-const a = elemOne.value;
-const outputA = document.getElementById('outputA');
+// const elemOne = document.getElementById('button');
+// const a = elemOne.value;
+// const outputA = document.getElementById('outputA');
+// button.addEventListener('click', function() {
+// outputA.textContent = a;
+// });
+
+
+let elemOne = document.getElementById('button');
+let outputA = document.getElementById('outputA');
 button.addEventListener('click', function() {
+let a = elemOne.value;  
 outputA.textContent = a;
 });
 
