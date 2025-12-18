@@ -1,0 +1,19 @@
+'use strict';
+ 
+// let myButton = document.getElementById('button');
+// const buttonValue =button.value;
+// console.log(buttonValue);
+// alert (buttonValue); 
+
+
+// function getValue(btn) {
+//   console.log(btn.value);
+//   let a = getValue(btn);
+//   alert( a);
+// }  
+const a = document.getElementById('button');
+const buttonValue = a.value;
+console.log(buttonValue);
+
+alert (butttonValye);
+
