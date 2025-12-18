@@ -11,9 +11,16 @@
 //   let a = getValue(btn);
 //   alert( a);
 // }  
-const a = document.getElementById('button');
-const buttonValue = a.value;
-console.log(buttonValue);
+// const a = document.getElementById('button');
+// const buttonValue = a.value;
+// console.log(buttonValue);
 
-alert (butttonValye);
+// alert (butttonValye);
+
+const elemOne = document.getElementById('button');
+const a = elemOne.value;
+const outputA = document.getElementById('outputA');
+button.addEventListener('click', function() {
+outputA.textContent = a;
+});
 
