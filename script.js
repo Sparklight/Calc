@@ -25,9 +25,9 @@
 // });
 
 
-let elemOne = document.getElementById('button');
+let elemOne = document.getElementById('buttonSeven') || document.getElementById('buttonEight');
 let outputA = document.getElementById('outputA');
-button.addEventListener('click', function() {
+buttonSeven.addEventListener('click', function() {
 let a = elemOne.value;  
 outputA.textContent = a;
 });
