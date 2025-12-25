@@ -25,10 +25,23 @@
 // });
 
 
-let elemOne = document.getElementById('buttonSeven') || document.getElementById('buttonEight');
-let outputA = document.getElementById('outputA');
-buttonSeven.addEventListener('click', function() {
-let a = elemOne.value;  
-outputA.textContent = a;
-});
+// let elemOne = document.getElementById('buttonSeven') || document.getElementById('buttonEight');
+// let outputA = document.getElementById('outputA');
+// button.addEventListener('click', function() {
+// let a = elemOne.value;  
+// outputA.textContent = a;
+// });
 
+// let click
+// let button = document.getElementById('buttonSeven');
+// button.addEventListener('click', function() {
+// click = console.log(button.value);  
+// });
+// alert(click)
+
+
+let click
+let button = document.getElementById('buttonSeven').addEventListener('click', function() {
+console.log(this.value);  
+});
+alert(button)
