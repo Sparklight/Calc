@@ -40,8 +40,36 @@
 // alert(click)
 
 
-let click
-let button = document.getElementById('buttonSeven').addEventListener('click', function() {
-console.log(this.value);  
-});
-alert(button)
+// let click
+// let button = document.getElementById('buttonSeven').addEventListener('click', function() {
+// console.log(this.value);  
+// });
+// alert(button)
+
+
+// function val() {
+//     let a = document.getElementById('buttonSeven').addEventListener('click', function () {
+//         let b = sev.value;
+//         alert (b)
+    
+//     });
+
+
+    // document.getElementById('buttonOne') ||
+    // document.getElementById('buttonTwo') ||
+    // document.getElementById('buttonThree') ||
+    // document.getElementById('buttonFor') ||
+    // document.getElementById('buttonFive') ||
+    // document.getElementById('buttonSix') ||
+    // document.getElementById('buttonSeven') ||
+    // document.getElementById('buttonEight') ||
+    // document.getElementById('buttonNine') ||
+    // document.getElementById('buttonZero');
+    
+//   alert(a.value);
+// }
+
+function val() {
+    let a = sev.value;
+    alert(a);
+}
