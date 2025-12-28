@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="stile.css">
 </head>
 <body>
-   
    <div class="body">
       <div class="name">
         <table>
@@ -18,51 +17,49 @@
         </table>
        </div>
     <div class="btndispbox">
-        <form id="myForm" action="">
-        
+        <div class="dispbox">
         <table>
                 <tr>
                     <td>
-                        <div class="outputWindow">
-                            <p id="outputA"></p> <p></p> <p></p>          <!--ВРЕМЕННЫЙ ВЫВОД-->
-                        <!-- <input type="text" id="name"> -->
-                        </div>
+                        
+                            <!-- <p id="outputA"></p> <p></p> <p></p>          ВРЕМЕННЫЙ ВЫВОД -->
+                            <input class="outputWindow" type="text" id="disp" readonly disabled>
+                        
                     </td>
-                    <td><button class="rightBtn" type="submit" value="Del">C</button></td>
+                    <td><button onclick="clearDisp()" class="rightBtn">C</button></td>
                 </tr>
             </table> 
-
+        </div>
             <div class="btngray btnblock">
             <table>  
                 <tr>
-                    <td><button onclick="val()" name="sev" id="buttonSeven" class="numberBtn" type="submit" value="7">7</button></td>
-                    <td><button onclick="val()" id="buttonEight" class="numberBtn" type="submit" value="8">8</button></td>
-                    <td><button onclick="val()" id="buttonNine" class="numberBtn" type="submit" value="9">9</button></td>
-                    <td><button onclick="val()" id="buttonMinus" class="numberBtn" type="submit" value="-">-</button></td>
+                    <td><button onclick="btnClick('7')" id="buttonSeven" class="numberBtn" value="7">7</button></td>
+                    <td><button onclick="btnClick('8')" id="buttonEight" class="numberBtn" type="submit" value="8">8</button></td>
+                    <td><button onclick="btnClick('9')" id="buttonNine" class="numberBtn" type="submit" value="9">9</button></td>
+                    <td><button onclick="btnClick('-')" id="buttonMinus" class="numberBtn" type="submit" value="-">-</button></td>
                 </tr>
 
                 <tr>
-                    <td><button onclick="val()" id="buttonFour" class="numberBtn" type="submit" value="4">4</button></td>
-                    <td><button onclick="val()" id="buttonFive" class="numberBtn" type="submit" value="5">5</button></td>
-                    <td><button onclick="val()" id="buttonSix" class="numberBtn" type="submit" value="6">6</button></td>
-                    <td><button onclick="val()" id="buttonMultiplied" class="numberBtn" type="submit" value="*">x</button></td>
+                    <td><button onclick="btnClick('4')" id="buttonFour" class="numberBtn" type="submit" value="4">4</button></td>
+                    <td><button onclick="btnClick('5')" id="buttonFive" class="numberBtn" type="submit" value="5">5</button></td>
+                    <td><button onclick="btnClick('6')" id="buttonSix" class="numberBtn" type="submit" value="6">6</button></td>
+                    <td><button onclick="btnClick('*')" id="buttonMultiplied" class="numberBtn" type="submit" value="*">x</button></td>
                 </tr>
 
                 <tr>
-                    <td><button onclick="val()" id="buttonOne" class="numberBtn" type="submit" value="1">1</button></td>
-                    <td><button onclick="val()" id="buttonTwo" class="numberBtn" type="submit" value="2">2</button></td>
-                    <td><button onclick="val()" id="buttonThree" class="numberBtn" type="submit" value="3">3</button></td>
-                    <td><button onclick="val()" id="buttonPlus" class="numberBtn" type="submit" value="+">+</button></td>
+                    <td><button onclick="btnClick('1')" id="buttonOne" class="numberBtn" type="submit" value="1">1</button></td>
+                    <td><button onclick="btnClick('2')" id="buttonTwo" class="numberBtn" type="submit" value="2">2</button></td>
+                    <td><button onclick="btnClick('3')" id="buttonThree" class="numberBtn" type="submit" value="3">3</button></td>
+                    <td><button onclick="btnClick('+')" id="buttonPlus" class="numberBtn" type="submit" value="+">+</button></td>
                 </tr>
 
                 <tr>
-                    <td><button onclick="val()" id="buttonZero" class="numberBtn" type="submit" value="0">0</button></td>
-                    <td><button onclick="val()" id="buttonDot" class="numberBtn" type="submit" value=",">,</button></td>
-                    <td><button onclick="val()" id="buttonDivided" class="numberBtn" type="submit" value="/">/</button></td>
-                    <td><button onclick="val()" id="buttonEquals" class="numberBtn" type="submit" value="=">=</button></td>
+                    <td><button onclick="btnClick('0')" id="buttonZero" class="numberBtn" type="submit" value="0">0</button></td>
+                    <td><button onclick="btnClick(',')" id="buttonDot" class="numberBtn" type="submit" value=",">,</button></td>
+                    <td><button onclick="btnClick('/')" id="buttonDivided" class="numberBtn" type="submit" value="/">/</button></td>
+                    <td><button onclick="calculate()" id="buttonEquals" class="numberBtn" type="submit" value="=">=</button></td>
                 </tr>
         </table> 
-        </form>
     </div>
    </div> 
     <script src="script.js"></script>
