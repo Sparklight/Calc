@@ -36,7 +36,7 @@ button:active {
     width:auto;
     max-width: 300px;
     min-width: 230px;  
-    height: 400px;
+    height: 480px;
     border-radius: 20px;
     box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.349);
     /* aspect-ratio: 3 / 4; */
@@ -47,43 +47,57 @@ button:active {
 } */
 
 .rightBtn {
-    width: 50px;
-    height: 25px;
+    
+    position: relative;
+    width: 44px;
+    height: 24px;
     margin-left: 0%;
-    margin-top: 30px;
+    
+}
+.window {
+    display: inline-block;
 }
 .outputWindow {
     background: rgb(170, 170, 170);
-    border-radius: 10px 10px 0 0;
-    /* display: flex; */
+    /* border-radius: 10px 10px 0 0; */
+    border-radius: 10px;
+    display: flex;
     justify-content: left;
     border: 2px solid rgb(146, 106, 45);
-    border-bottom: 0;
+    /* border-bottom: 0; */
     margin-left: 0px;
     margin-top: 10px;
     padding: 0;
-    width: 154px;  
-    height: 40px; 
+    width: 200px;  
+    height: 60px; 
     
 }
 
 .outputWindowTwo {
     background: rgb(170, 170, 170);
     border-radius: 0 0 10px 10px;
-    /* display: flex; */
+    position: absolute;
+    top: 50px;
+    display: flex;
     justify-content: left;
     border: 2px  solid rgb(146, 106, 45);
     border-top: 0;
     margin-left: 0px;
     padding: 0;
-    width: 154px;  
+    width: 160px;  
     height: 40px;
 }
 
+.deleteButton {
+    padding-top: 2%;
+    display: inline-block;
+}
+
 .dispbox {
+    margin-left: 12%;
     position: relative;
     display: flex; 
-    justify-content: center;
+    justify-content: left;
 }
 
 .btndispbox {
@@ -99,16 +113,28 @@ button:active {
     height: 90%;
 }
 
+.firstRow {
+    padding: 2% 0 1% 1%;
+}
+
 .btnblock {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin-top: 1vh;
-    padding-top: 5%;
+    
+    /* margin-top: 1vh; */
+    padding: 2% 0 1% 1%;
     /* background: red; */
     width: 100%;
 }
 
+.keysblock {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+    
+    padding-top:3%;
+    /* background: red; */
+    width: 100%;
+}
 
 
  /* .display {
@@ -134,7 +160,12 @@ button:active {
     margin-right: auto;
     margin-top: 50px;
 }
-.btngray button {
+/* .btngray button {
+    padding: 0;
+    background: rgb(190, 190, 190);
+} */
+
+.btngray {
     padding: 0;
     background: rgb(190, 190, 190);
 }
