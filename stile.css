@@ -51,7 +51,8 @@ button:active {
     position: relative;
     width: 44px;
     height: 24px;
-    margin-left: 0%;
+    margin-left: 6%;
+    margin-bottom: 15%;
     
 }
 .window {
@@ -70,6 +71,10 @@ button:active {
     padding: 0;
     width: 200px;  
     height: 60px; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: 100%;
+    
     
 }
 
@@ -114,7 +119,8 @@ button:active {
 }
 
 .firstRow {
-    padding: 2% 0 1% 1%;
+    justify-content: center;
+    padding: 2% 0 2% 1%;
 }
 
 .btnblock {
@@ -213,7 +219,7 @@ button:active {
         background: rgb(139, 139, 139);
         border: 2px solid rgb(128, 52, 52);
     }
-    .btngray button {
+    .btngray {
         background: rgb(66, 66, 66);
     }
     .name {
