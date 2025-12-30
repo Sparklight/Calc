@@ -14,6 +14,10 @@ function btnClick (input) {
     inputElement.value = newExample;
     console.log(newExample);
   }
+  if (inputElement.value == 'Error') {
+    let newExample = example.slice(0, -1);
+    inputElement.value = newExample;
+  }
 
   
 }
@@ -28,6 +32,15 @@ function calculate() {
     } 
     catch (error) {
         inputElement.value = "Error";
+    }
+    if (inputElement.value == 'undefined') {
+        inputElement.value = '';
+    }
+    else if (inputElement.value == 'function Error() { [native code] }') {
+        inputElement.value = 'Error';
+    }
+    else if (inputElement.value == 'NaN') {
+        inputElement.value = 'Error';
     }
 }
 function deleteOne() {
