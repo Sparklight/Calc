@@ -2,12 +2,12 @@
 
 const inputElement = document.getElementById('disp');
 const displaytwo = document.getElementById('disptwo');
-let example = inputElement.value;
 let memory
 let notError
 
 function btnClick (input) {
   inputElement.value += input; 
+    let example = inputElement.value;
     let lastChar = example[example.length - 1];
     let lastCharTwo = example[example.length - 2];
 
@@ -63,12 +63,15 @@ function btnClick (input) {
 function clearDisp () {
    inputElement.value = ""; 
    displaytwo.value = '';
+   memory = '';
    notError = '';
-
    document.getElementsByClassName('outputWindow')[0].style.fontSize = "150%";
+   let paragraph = document.getElementById('p');
+    paragraph.textContent = '';
 }
 
 function calculate() {
+    let example = inputElement.value;
     try {
         inputElement.value = eval (inputElement.value);
     } 
@@ -100,6 +103,7 @@ function calculate() {
    
 }
 function deleteOne() {
+    let example = inputElement.value;
     let newExample = example.slice(0, -1);
     inputElement.value = newExample;
     console.log(inputElement.value);
@@ -109,10 +113,10 @@ function deleteOne() {
     if (length >= 18){
       document.getElementsByClassName('outputWindow')[0].style.fontSize = "90%";
     }
-    else if (length >= 14) {
+    else if (length >= 17) {
       document.getElementsByClassName('outputWindow')[0].style.fontSize = "110%";
     }
-    else if (length < 13){
+    else if (length <= 13){
       document.getElementsByClassName('outputWindow')[0].style.fontSize = "150%";
     }
 }
@@ -120,7 +124,11 @@ function deleteOne() {
 function addInMemory() {
     let addMemory = inputElement.value;
     memory = addMemory.replace(/[^\w\s]|_/g, "");
-    
+    let paragraph = document.getElementById('p');
+    paragraph.textContent = 'm';
+    if (inputElement.value == '') {
+      paragraph.textContent = '';
+    }
 }
 
 function useMemory() {
