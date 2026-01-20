@@ -12,7 +12,7 @@ function btnClick (input) {
     let lastCharTwo = example[example.length - 2];
 
   const length = example.length;
-  console.log(length);
+  // console.log(length);
 
     const symbols = /[+-/*]/;
     let symboltest = (symbols.test(example))
@@ -35,7 +35,7 @@ function btnClick (input) {
       (lastCharTwo == '+' || lastCharTwo == '-' || lastCharTwo == '*' || lastCharTwo == '/')) {
     let newExample = example.slice(0, -1);
     inputElement.value = newExample;
-    console.log(newExample);
+    // console.log(newExample);
   }
 
   if (inputElement.value == 'Error') {
